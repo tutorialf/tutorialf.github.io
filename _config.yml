@@ -1,0 +1,49 @@
+url: http://tutorialf.github.io
+title: tutorialf.org geliştirici blogu
+subtitle: geliştiriciler için faydalı yazılar
+google_custom_search:
+google_analytics_tracking_id:
+permalink: /blog/:year/:month/:day/:title/
+baseurl: ""
+twitter_username:
+github_username: tutorialf
+
+disqus_short_name: muratbastas
+disqus_show_comment_count: true
+
+exclude: [vendor]
+
+markdown: rdiscount
+# markdown: redcarpet
+highlighter: pygments
+
+paginate: 10
+paginate_path: "/blog/:num/"
+
+recent_posts: 5
+excerpt_link: "devam et"
+titlecase: true
+category_dir: blog/categories
+
+authors:
+  murat:
+    name: muratbastas
+    site: http://muratbastas.com
+    twitter: muratbastas
+    github: muratbastas
+
+  ali:
+    name: aligurbuz
+    github: aligurbuz
+
+# oss_projects:
+#   - title: Force
+#     svg: "_includes/svg/force.svg"
+#     description: The Artsy that you know. It is the web front-end for Artsy.net, powering
+#       hundreds of thousands of page views and bringing art to the masses at scale. Built
+#       on top of Ezel.js it provides a behind the scenes look at a non-trivial node based
+#       front-end.
+#     category: featured
+#     link: artsy/force
+#     repository: https://github.com/artsy/force-public
+#     created: Nov 3rd, 2013
