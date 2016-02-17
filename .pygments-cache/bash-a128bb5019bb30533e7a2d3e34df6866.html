@@ -1,0 +1,33 @@
+<div class="highlight"><pre><span class="nv">$ </span>git clone git@github.com:artsy/artsy.github.com.git
+ Cloning into artsy.github.com...
+
+<span class="nv">$ </span><span class="nb">cd </span>artsy.github.com
+
+artsy.github.com<span class="nv">$ </span>git checkout <span class="nb">source</span>
+<span class="nb"> </span>Branch <span class="nb">source set </span>up to track remote branch <span class="nb">source </span>from origin.
+ Switched to a new branch <span class="s1">&#39;source&#39;</span>
+
+artsy.github.com<span class="nv">$ </span>mkdir _deploy
+
+artsy.github.com<span class="nv">$ </span><span class="nb">cd </span>_deploy
+
+artsy.github.com/_deploy<span class="nv">$ </span>git init
+ Initialized empty Git repository in artsy.github.com/_deploy/.git/
+
+artsy.github.com/_deploy<span class="nv">$ </span>git remote add origin git@github.com:artsy/artsy.github.com.git
+
+artsy.github.com/_deploy<span class="nv">$ </span>git pull origin master
+ From github.com:artsy/artsy.github.com
+  * branch            master     -&gt; FETCH_HEAD
+
+artsy.github.com/_deploy<span class="nv">$ </span><span class="nb">cd</span> ..
+
+artsy.github.com<span class="nv">$ </span>rake create_post<span class="o">[</span><span class="s2">&quot;Octopress and Jekyll&quot;</span><span class="o">]</span>
+ Creating new post: <span class="nb">source</span>/_posts/2012-01-18-octopress-and-jekyll.md
+
+artsy.github.com<span class="nv">$ </span>git commit -am <span class="s2">&quot;Octopress and Jekyll&quot;</span>
+ <span class="m">1</span> files changed, <span class="m">52</span> insertions<span class="o">(</span>+<span class="o">)</span>, <span class="m">0</span> deletions<span class="o">(</span>-<span class="o">)</span>
+ create mode <span class="m">100644</span> <span class="nb">source</span>/_posts/2012-01-18-octopress-and-jekyll.md
+
+artsy.github.com<span class="nv">$ </span>rake deploy
+</pre></div>
